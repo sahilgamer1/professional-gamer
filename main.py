@@ -924,8 +924,8 @@ async def embed(ctx, *args):
       argstr = " ".join(args)
       r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
       text = argstr
-      color = discord.Color((r << 16) + (g << 8) + b)
+      color = discord.Color((<< 16) + (g << 8) + b)
       await client.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
       await client.delete_message(ctx.message)    
 
-client.run(os.getenv('NTE4NzA2NDQ4MDA4NDc4NzMy.DvKdWg.ePUyZU_wwU0GbKWki7qup3KA8a8''))
+client.run(os.getenv('Token''))
